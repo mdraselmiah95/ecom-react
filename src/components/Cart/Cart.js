@@ -3,7 +3,9 @@ import React from "react";
 const Cart = () => {
   return (
     <div>
-      <h2>This is cart.</h2>
+      <h2>
+        <i class="fas fa-shopping-cart">0</i>
+      </h2>
     </div>
   );
 };
