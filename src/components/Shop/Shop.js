@@ -13,6 +13,8 @@ const Shop = () => {
 
   const handleAddProduct = (product) => {
     const newCart = [...cart, product];
+    console.log(newCart);
+    setCart(newCart);
   };
 
   useEffect(() => {
@@ -29,7 +31,11 @@ const Shop = () => {
         <div className="col-md-9">
           <div className="row">
             {products.map((product) => (
-              <Product key={product.key} product={product} />
+              <Product
+                key={product.key}
+                product={product}
+                handleAddProduct={handleAddProduct}
+              />
             ))}
           </div>
         </div>

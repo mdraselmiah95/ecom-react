@@ -26,7 +26,12 @@ const Product = (props) => {
                   only {stock} left in stock - order soon
                 </small>
               </p>
-              <button className="btn btn-outline-primary">Add to Cart</button>
+              <button
+                onClick={props.handleAddProduct}
+                className="btn btn-outline-primary"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
