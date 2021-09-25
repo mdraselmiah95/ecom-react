@@ -40,7 +40,7 @@ const Shop = () => {
           </div>
         </div>
         <div className="col-md-3">
-          <Cart />
+          <Cart cart={cart} />
         </div>
       </div>
     </div>
