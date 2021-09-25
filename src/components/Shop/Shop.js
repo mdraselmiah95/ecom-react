@@ -14,7 +14,7 @@ const Shop = () => {
   const handleAddProduct = (product) => {
     const newCart = [...cart, product];
     setCart(newCart);
-    console.log(newCart);
+    // console.log(newCart);
   };
 
   useEffect(() => {
