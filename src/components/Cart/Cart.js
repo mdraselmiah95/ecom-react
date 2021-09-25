@@ -2,6 +2,9 @@ import React from "react";
 
 const Cart = (props) => {
   const { cart } = props || {};
+
+  //Use Reduce in Cart as Cart is array od object
+
   return (
     <div>
       <h2>
