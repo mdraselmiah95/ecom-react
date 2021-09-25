@@ -2,7 +2,7 @@ import React from "react";
 
 const Product = (props) => {
   console.log(props.product);
-  const { name, seller, img, stock, price } = props.product;
+  const { name, seller, img, stock, price } = props.product || {};
   return (
     <div className="col-md-6">
       <div className="card mb-3" style={{ maxWidth: "540px" }}>
@@ -15,6 +15,9 @@ const Product = (props) => {
               <h5 className="card-title">
                 <small>{name}</small>
               </h5>
+              <p className="card-text">
+                <small>by: {seller}</small>
+              </p>
               <p className="card-text">
                 <small>$ {price}</small>
               </p>
