@@ -32,6 +32,23 @@ const Cart = (props) => {
       <h3>Total before tax: {totalBeforeTax.toFixed(2)}</h3>
       <h3>Tax:{tax.toFixed(2)}</h3>
       <h2>Total price: {grandTotal.toFixed(2)}</h2>
+      <div>
+        <table className="table table-success table-striped">
+          <tbody>
+            <tr>
+              <td>Items</td>
+              <td>{total.toFixed(2)}</td>
+            </tr>
+            <tr>
+              <td>Shipping & Handing:</td>
+              <td>{shippingCost.toFixed(2)}</td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
