@@ -24,6 +24,10 @@ const Cart = (props) => {
 
   return (
     <div>
+      <div className="text-center mt-5">
+        <h3>Order Summary</h3>
+        <h6>Items ordered: {cart.length}</h6>
+      </div>
       <table className="table table-success table-striped mt-5">
         <tbody>
           <tr>
