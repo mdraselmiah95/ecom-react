@@ -5,6 +5,16 @@ import "./Shop.css";
 const Shop = () => {
   const [products, setProducts] = useState([]);
 
+  //This is state is use for Cart
+
+  const [cart, setCart] = useState([]);
+
+  //Where State is use Event handler is also declare their
+
+  const handleAddProduct = (product) => {
+    const newCart = [...cart, product];
+  };
+
   useEffect(() => {
     fetch(
       "https://raw.githubusercontent.com/ProgrammingHero1/ema-john-simple-resources/master/fakeData/products.JSON"
