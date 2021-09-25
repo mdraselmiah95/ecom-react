@@ -18,7 +18,7 @@ const Shop = () => {
         <div className="col-md-9">
           <div className="row">
             {products.map((product) => (
-              <Product />
+              <Product product={product} />
             ))}
           </div>
         </div>
