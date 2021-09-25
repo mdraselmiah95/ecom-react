@@ -1,7 +1,7 @@
 import React from "react";
 
 const Product = (props) => {
-  console.log(props.product);
+  //   console.log(props.product);
   const { name, seller, img, stock, price } = props.product || {};
   return (
     <div className="col-md-6">
@@ -27,7 +27,7 @@ const Product = (props) => {
                 </small>
               </p>
               <button
-                onClick={props.handleAddProduct}
+                onClick={() => props.handleAddProduct(props.product)}
                 className="btn btn-outline-primary"
               >
                 Add to Cart

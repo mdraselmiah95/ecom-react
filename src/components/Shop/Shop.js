@@ -13,8 +13,8 @@ const Shop = () => {
 
   const handleAddProduct = (product) => {
     const newCart = [...cart, product];
-    console.log(newCart);
     setCart(newCart);
+    console.log(newCart);
   };
 
   useEffect(() => {
