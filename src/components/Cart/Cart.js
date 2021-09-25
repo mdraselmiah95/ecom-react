@@ -24,31 +24,30 @@ const Cart = (props) => {
 
   return (
     <div>
-      <h2>
-        <i className="fas fa-shopping-cart">{cart.length}</i>
-      </h2>
-      <h4>{total.toFixed(2)}</h4>
-      <h4>Shipping & Handing: {shippingCost.toFixed(2)}</h4>
-      <h3>Total before tax: {totalBeforeTax.toFixed(2)}</h3>
-      <h3>Tax:{tax.toFixed(2)}</h3>
-      <h2>Total price: {grandTotal.toFixed(2)}</h2>
-      <div>
-        <table className="table table-success table-striped">
-          <tbody>
-            <tr>
-              <td>Items</td>
-              <td>{total.toFixed(2)}</td>
-            </tr>
-            <tr>
-              <td>Shipping & Handing:</td>
-              <td>{shippingCost.toFixed(2)}</td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <table className="table table-success table-striped mt-5">
+        <tbody>
+          <tr>
+            <td>Items</td>
+            <td>{total.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Shipping & Handing:</td>
+            <td>{shippingCost.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Total before tax:</td>
+            <td>{totalBeforeTax.toFixed(2)}</td>
+          </tr>
+          <tr>
+            <td>Estimated Tax:</td>
+            <td>{tax.toFixed(2)}</td>
+          </tr>
+          <tr className="fw-bold fs-4 text-danger">
+            <td>Order Total:</td>
+            <td>{grandTotal.toFixed(2)}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
