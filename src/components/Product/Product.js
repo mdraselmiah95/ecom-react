@@ -5,7 +5,7 @@ import Rating from "react-rating";
 const Product = (props) => {
   //   console.log(props.product);
   const fontIcon = <FontAwesomeIcon icon={faShoppingCart} />;
-  const { name, seller, img, stock, price } = props.product || {};
+  const { name, seller, img, stock, price, star } = props.product || {};
   return (
     <div className="col-md-6">
       <div className="card mb-3 p-2" style={{ maxWidth: "540px" }}>
@@ -25,6 +25,7 @@ const Product = (props) => {
                 <small>$ {price}</small>
               </p>
               <Rating
+                initialRating={star}
                 readonly
                 emptySymbol="far fa-star text-warning"
                 fullSymbol="fas fa-star text-warning"
